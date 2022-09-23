@@ -6,10 +6,38 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- Comment développer en utilisant un système de *livereloading* (`nodemon` par exemple) ❌ / ✔️
-- La connexion de mon application à une base de données avec et sans ORM/ODM (avec `mongodb` puis `mongoose` par exemple) ❌ / ✔️
+- Comment développer en utilisant un système de _livereloading_ (`nodemon` par exemple) ✔️
+  Ajout d'un script dans `package.json` de ce type :
+
+```json
+  "scripts": {
+    "start": "nodemon server.js",
+  },
+```
+
+- La connexion de mon application à une base de données avec et sans ORM/ODM (avec `mongodb` puis `mongoose` par exemple) ✔️
+  On met les paramètres de connexion dans un fichier .env pour ne pas les exposer, puis on configure la connexion avec mongoose comme ceci (server.js) :
+
+```javascript
+// ...
+dotenv.config({ path: "./config.env" });
+
+const app = require("./app");
+
+const DB = process.env.DATABASE.replace(
+  "<password>",
+  process.env.DATABASE_PASSWORD
+);
+
+mongoose
+  .connect(DB)
+  .then(() => console.log("Connexion with DB done. Listening to requests..."));
+
+// app listen on port
+```
+
 - Le développement d'une API REST et GraphQL (avec les packages `express` et `graphql` par exemple) ❌ / ✔️
-- *Bonus : la manipulation des fichiers système avec `fs` et l'utilisation des streams en NodeJS* ❌ / ✔️
+- _Bonus : la manipulation des fichiers système avec `fs` et l'utilisation des streams en NodeJS_ ❌ / ✔️
 
 ## 💻 J'utilise
 
