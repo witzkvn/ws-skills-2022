@@ -7,6 +7,7 @@
 ## 🎓 J'ai compris et je peux expliquer
 
 - Comment développer en utilisant un système de _livereloading_ (`nodemon` par exemple) ✔️
+
   Ajout d'un script dans `package.json` de ce type :
 
 ```json
@@ -16,6 +17,7 @@
 ```
 
 - La connexion de mon application à une base de données avec et sans ORM/ODM (avec `mongodb` puis `mongoose` par exemple) ✔️
+
   On met les paramètres de connexion dans un fichier .env pour ne pas les exposer, puis on configure la connexion avec mongoose comme ceci (server.js) :
 
 ```javascript
@@ -36,7 +38,12 @@ mongoose
 // app listen on port
 ```
 
-- Le développement d'une API REST et GraphQL (avec les packages `express` et `graphql` par exemple) ❌ / ✔️
+- Le développement d'une API REST et GraphQL (avec les packages `express` et `graphql` par exemple) ✔️
+
+  Exemple de projet REST : [Wilder Book REST](https://github.com/witzkvn/20220920_wilders_book_ts_backend)
+
+  Exemple de projet GraphQL : [Wilder Book GraphQL](https://github.com/witzkvn/WCS_wilders_book_TS_GraphQL_BACK)
+
 - _Bonus : la manipulation des fichiers système avec `fs` et l'utilisation des streams en NodeJS_ ❌ / ✔️
 
 ## 💻 J'utilise
@@ -44,16 +51,14 @@ mongoose
 ### Un exemple personnel commenté ❌ / ✔️
 
 ```javascript
-// this function takes a path to a .md file of the host system and write the HTML version of this file
-// the .html file is given back
-const convertMDFileToHTML = (pathToMDfile) => /* ... path to HTML file */
+
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
-[lien github](...)
+[Wilders Book en vanilla JS](https://github.com/witzkvn/20220912_nodejs_express_typeORM_sqlite_basics)
 
-Description :
+Description : Projet Backend en Vanilla JS Node avec typeORM, Express et SQLite
 
 ### Utilisation en production si applicable❌ / ✔️
 
@@ -67,10 +72,10 @@ Description :
 
 ## 🌐 J'utilise des ressources
 
-### Titre
+### Node JS doc
 
-- lien
-- description
+- https://nodejs.org/en/docs/
+- Documentation de Node JS
 
 ## 🚧 Je franchis les obstacles
 

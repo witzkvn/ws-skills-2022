@@ -7,9 +7,15 @@
 ## 🎓 J'ai compris et je peux expliquer
 
 - l'intéret de TypeScript dans l'IDE ✔️
+
   Permet d'ajouter un typage fort sur les variables, afin de détecter les erreurs de compilation et de faciliter le débuggage
-- les types de bases ✔️ number, string, boolean. On a ensuite les arrays d'un type (ex: number[]), les enum, les tuples...
+
+- les types de bases ✔️
+
+  number, string, boolean. On a ensuite les arrays d'un type (ex: number[]), les enum, les tuples...
+
 - comment et pourquoi étendre une interface ✔️
+
   Etendre une interface permet d'implémenter l'interface étendue (récupérer ses propriétés et ses méthodes) dans une nouvelle interface. Dans l'exemple ci-dessous, si MyInterfaceA venait à changer, alors MyInterfaceB serait automatiquement changée aussi !
 
 ```typescript
@@ -20,7 +26,35 @@ interface MyInterfaceB extends MyInterfaceA {
 }
 ```
 
-- les classes et les decorators ❌ / ✔️
+- les classes et les decorators ✔️
+
+  Les classes permettent de décrire une entité, un peu comme un plan de construction. Elle contient un constructor qui est la fonction appelée lors de l'instanciation de cette classe, des propriétés et des méthodes.
+  Les decorators se placent au-dessus des propriétés / méthodes et permettent d'ajouter des informations. Ils s'écrivent avec "@\<nom decorator\>". Un exemple de decorator utilisés avec typeorm sur une classe entité :
+
+  ```javascript
+  @Entity()
+  export class Wilder implements IWilder {
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column()
+    name: string;
+
+    @Column()
+    city: string;
+
+    @Column()
+    description: string;
+
+    @Column()
+    avatar?: string;
+
+    @OneToMany(() => Grade, (grade) => grade.wilder, {
+      cascade: true,
+    })
+    grades: Grade[];
+  }
+  ```
 
 ## 💻 J'utilise
 
@@ -71,11 +105,11 @@ export function decodedResistorValue(colors: string[]): string {
 }
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
-[lien github](...)
+[Wilders Book Typescript Backend](https://github.com/witzkvn/20220920_wilders_book_ts_backend)
 
-Description :
+Description : Projet backend Wilders Book API REST en typescript
 
 ### Utilisation en production si applicable❌ / ✔️
 
@@ -89,10 +123,15 @@ Description :
 
 ## 🌐 J'utilise des ressources
 
-### Titre
+### Typescript doc
 
-- [typescript handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+- https://www.typescriptlang.org/docs/handbook/intro.html
 - Handbook typescript qui décrit en détail beaucoup de notions TS
+
+### Exercism.io
+
+- https://exercism.org/tracks/typescript
+- Exercices TS
 
 ## 🚧 Je franchis les obstacles
 

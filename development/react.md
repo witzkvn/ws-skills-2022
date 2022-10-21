@@ -7,15 +7,29 @@
 ## 🎓 J'ai compris et je peux expliquer
 
 - l'état (_state_) pour contrôler l'affichage d'un composant ✔️
+
   En utilisant les states dans le JSX, celui-ci sera automatiquement re-rendu aux modifications des states.
+
 - les composants enfants et les _props_ qu'on leur passe ✔️
+
   Les composants enfants sont des composants à l'intérieur d'un autre composant. On peut leur passer des props pour leur donner accès à certaines propriétés / fonctions venant du parent.
-- le déclenchement d'instructions en fonction des actions de l'utilisateur ✔️ il existe des attributs à placer dans le JSX pour déclencer des appels vers des fonctions. Ces attributs sont par exemple : `onSubmit={fnToCall}` ou `onClick={fnToCall}`
+
+- le déclenchement d'instructions en fonction des actions de l'utilisateur ✔️
+
+  il existe des attributs à placer dans le JSX pour déclencer des appels vers des fonctions. Ces attributs sont par exemple : `onSubmit={fnToCall}` ou `onClick={fnToCall}`
+
 - le déclenchement d'instructions en fonction de l'étape du cycle de vie du composant ou du changement de valeur de ses props ✔️
+
   On peut utiliser le hook `useEffect()` qui prend en premier paramètre une fonction (pour exécuter des instructions) et en deuxième paramètre un tableau de dépendance. Ces instructions vont s'exécuter à chaque modification de ces dépendances (un state par exemple). Si le tableau est vide, les instructions ne s'exécuteront qu'une seule fois au moment du rendu du component.
-- l'usage d'un reducer (_useReducer_) pour gérer un état composé dans un composant ✔️ Lorsque l'on travail avec un state complexe (valeurs imbriquées, manipulations à faire sur les données...) il est préférable d'utiliser un reducer pour dispatcher des actions. La gestion du state peut alors être dissociée du component et gérer de nombreuses actions différentes dans un switch().
+
+- l'usage d'un reducer (_useReducer_) pour gérer un état composé dans un composant ✔️
+
+  Lorsque l'on travail avec un state complexe (valeurs imbriquées, manipulations à faire sur les données...) il est préférable d'utiliser un reducer pour dispatcher des actions. La gestion du state peut alors être dissociée du component et gérer de nombreuses actions différentes dans un switch().
+
 - l'état stocké dans un composant avec un _context provider_ et accessible dans ses descendants via `useContext` ✔️
+
   On peut créer un objet et le rendre accessible à un component et tous des enfants en créant un contexte (React.createContext(data)), puis on englobant les components nécessitant ce contexte entre des balise (context_name).Provider :
+
   ```jsx
   const ThemeContext = React.createContext(data);
   function App() {
@@ -26,6 +40,7 @@
     );
   }
   ```
+
   Ici "Toolbar" et tous ses components enfant ont accès aux données dans le contexte ThemeContext (utiliser le hook useContext pour récupérer les valeurs dans un component enfant).
 
 ## 💻 J'utilise
@@ -117,11 +132,11 @@ const UserList = () => {
 export default UserList;
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
-[lien github](...)
+[Wilders Book React Frontend](https://github.com/witzkvn/20220921_wilders_book_react_ts)
 
-Description :
+Description : Projet frontend de Wilders Book en React et Typescript
 
 ### Utilisation en production si applicable❌ / ✔️
 
@@ -135,10 +150,10 @@ Description :
 
 ## 🌐 J'utilise des ressources
 
-### Titre
+### React JS
 
-- lien
-- description
+- https://fr.reactjs.org/docs/getting-started.html
+- Documentation officielle React
 
 ## 🚧 Je franchis les obstacles
 

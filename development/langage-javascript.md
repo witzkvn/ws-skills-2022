@@ -7,12 +7,16 @@
 ## 🎓 J'ai compris et je peux expliquer
 
 - les `structures` de base du langage ✔️
+  
   Javascript est un langage de script ayant plusieurs types primitifs (number, string, bool, null, undefined...) et non primitifs (object).
 - les normes `ecmascript` ✔️
+  
   Ensemble de normes disponibles sur le site [ECMA INTERNATIONAL](https://www.ecma-international.org/) qui définissent les standards du langage Javascript (par exemple les fonction existantes sur les objets Dates, et comment elles fonctionnent)
 - l'utilisation de l'`asynchrone` ✔️
+  
   Du code asynchrone est du code dont on ne sait pas à l'avance le temps d'exécution. On peut le gérer avec .then() et .catch() ou en utilisant un block trycatch avec async / await.
 - les spécifités du mot-clef `this` ✔️
+  
   this fait référence à l'objet dans lequel le code est exécuté. Par exemple dans une classe, this fera référence à l'instance de cette classe.
 
 ## 💻 Je code en Javascript
@@ -86,9 +90,9 @@ function formatStrPortion(value, unit) {
 }
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
-[lien github](...)
+[Wilders Book en vanilla JS](https://github.com/witzkvn/20220912_nodejs_express_typeORM_sqlite_basics)
 
 Description :
 
@@ -104,10 +108,20 @@ Description :
 
 ## 🌐 J'utilise des ressources
 
-### Titre
+### Eloquent JS
 
-- lien
-- description
+- https://eloquentjavascript.net/
+- Eloquent JS handook qui contient une documentation complète
+
+### MDN
+
+- https://developer.mozilla.org/fr/
+- Documentation MDN
+
+### w3schools
+
+- https://www.w3schools.com/
+- Documentation w3schools
 
 ## 🚧 Je franchis les obstacles
 

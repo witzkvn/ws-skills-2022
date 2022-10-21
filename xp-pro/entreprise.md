@@ -16,7 +16,7 @@ Dans le cadre de son évolution, Keep In Touch souhaite mettre à disposition sa
 
 Il n'y a qu'une seule équipe de développement constituée de 3 personnes :
 
-- Nicolas, data-scientist et manager (fin d'alternance en 2022)
+- Nicolas, data-scientist et manager (fin d'alternance en octobre 2022)
 - Yunus, développeur Javascript Front-end en alternance
 - Et moi, Kevin, développeur Javascript Back-end en alternance
 
